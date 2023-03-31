@@ -101,36 +101,36 @@
               <div class="form-group">
                 <div class="btn-box row">
                   <div class="col-lg-6 col-md-12">
-                    <a href="#" class="theme-btn btn-style-seven"><i class="la la-user"></i> Candidate </a>
+                    <a href="#" class="theme-btn btn-style-seven" name="user_type"><i class="la la-user"></i> Candidate </a>
                   </div>
                   <div class="col-lg-6 col-md-12">
-                    <a href="#" class="theme-btn btn-style-four"><i class="la la-briefcase"></i> Employer </a>
+                    <a href="#" class="theme-btn btn-style-four" name="user_type"><i class="la la-briefcase"></i> Employer </a>
                   </div>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required><br>
+                <input type="text" id="firstName" name="first_name" required><br>
               </div>
 
               <div class="form-group">
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required><br>
+                <input type="text" id="lastName" name="last_name" required><br>
               </div>
 
               <div class="form-group">
                 <label for="country">Country:</label>
-                  <select id="country" name="country" required>
+                  <select id="country" name="country_id" required>
                     <option value="">--Select Country--</option>
                     <option value="USA">United States</option>
-                    <option value="UK">Puerto Rico</option>
+                    <option value="PR">Puerto Rico</option>
                   </select><br>
               </div>
 
               <div class="form-group">
                 <label for="state">State:</label>
-                <select id="state" name="state" required>
+                <select id="state" name="state_id" required>
                   <option value="">--Select State--</option>
                   <option value="AZ">complete list from DB</option>
                 </select><br>
@@ -138,7 +138,7 @@
 
               <div class="form-group">
                 <label for="city">City:</label>
-                <select id="city" name="city" required>
+                <select id="city" name="city_id" required>
                   <option value="">--Select City--</option>
                   <option value="AZ">complete list from DB</option>
                 </select><br>
@@ -146,12 +146,12 @@
               
               <div class="form-group">
                 <label for="zipcode">ZIP Code:</label>
-                <input type="text" pattern="\d{5}" title="Please enter a valid ZIP Code"id="zipcode" name="zipcode" required><br>
+                <input type="text" pattern="\d{5}" title="Please enter a valid ZIP Code"id="zipcode" name="zipcode_id" required><br>
               </div>
 
               <div class="form-group">
                 <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone" required><br>
+                <input type="text" id="phone" name="phone_number" required><br>
               </div>
 
               <div class="form-group">
@@ -167,11 +167,11 @@
 
               <div class="form-group">
                 <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+                <input type="password" id="confirmPassword" name="password_confirmation" required><br>
               </div>
 
               <div class="form-group">
-                <input type="checkbox" id="agree" name="agree" required>
+                <input type="checkbox" id="agree" name="is_agree_terms_privacy" required>
                 <label for="agree">I agree to the user terms and privacy policy.</label><br>
 
               </div>
