@@ -16,6 +16,7 @@
   <!-- Responsive -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="csrf-token" content="">
   <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
@@ -97,8 +98,11 @@
             <h3>Create an Account In Is Yours</h3>
 
             <!--Login Form-->
-            <form method="post" action="add-parcel.html">
-              <div class="form-group">
+            
+            <form id="registrationForm" action="http://www.isyours.com/api/register" method="POST">
+              <div id="errors"></div>
+              <input type="hidden" name="_token" value="">
+              <!-- <div class="form-group">
                 <div class="btn-box row">
                   <div class="col-lg-6 col-md-12">
                     <a href="#" class="theme-btn btn-style-seven" name="user_type"><i class="la la-user"></i> Candidate </a>
@@ -107,7 +111,16 @@
                     <a href="#" class="theme-btn btn-style-four" name="user_type"><i class="la la-briefcase"></i> Employer </a>
                   </div>
                 </div>
+              </div> -->
+
+              <div class="form-group">
+                <label for="user_type">User Type:</label>
+                  <select id="user_type" name="user_type" required>
+                    <option value="candidate" selected>Candidate</option>
+                    <option value="employer">Employer</option>
+                  </select><br>
               </div>
+
 
               <div class="form-group">
                 <label for="firstName">First Name:</label>
@@ -117,6 +130,12 @@
               <div class="form-group">
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="last_name" required><br>
+              </div>
+
+
+              <div class="form-group">
+                <label for="identification">Identification:</label>
+                <input type="text" id="identification" name="identification" required><br>
               </div>
 
               <div class="form-group">
@@ -171,7 +190,7 @@
               </div>
 
               <div class="form-group">
-                <input type="checkbox" id="agree" name="is_agree_terms_privacy" required>
+                <input type="checkbox" id="agree" name="is_agree_terms_privacy" value="1" required>
                 <label for="agree">I agree to the user terms and privacy policy.</label><br>
 
               </div>
@@ -236,6 +255,7 @@
   <script src="js/owl.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/api/register.js"></script>
 
 </body>
 
