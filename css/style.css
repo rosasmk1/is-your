@@ -545,9 +545,15 @@ input:checked + .slider:before {
   position: relative;
 }
 
+.form-group {
+  flex-wrap: wrap;
+
+}
+
 .default-form .form-group {
   position: relative;
   margin-bottom: 20px;
+  
 }
 
 .default-form .form-group:last-child {
@@ -561,6 +567,25 @@ input:checked + .slider:before {
   font-weight: 500;
   margin-bottom: 10px;
 }
+
+.form-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  display: flex;
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.form-box {
+  width: 50%;
+  height: 100px;
+  display: inline-block;
+}
+
 
 .default-form .form-group input[type="text"],
 .default-form .form-group input[type="password"],

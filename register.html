@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Is Yours - Register</title>
+  <title>Is Yours | Register</title>
 
   <!-- Stylesheets -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -27,38 +27,23 @@
     <!-- Preloader -->
     <div class="preloader"></div>
 
-    <!-- Header Span -->
-    <span class="header-span"></span>
-
     <!-- Main Header-->
-    <header class="main-header header-shaddow">
+    <header class="main-header">
       <div class="container-fluid">
         <!-- Main box -->
         <div class="main-box">
           <!--Nav Outer -->
           <div class="nav-outer">
             <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="images/logo-main.svg" alt="" title=""></a></div>
+              <div class="logo"><a href="index.html"><img src="images/logo-main-big.svg" alt="" title=""></a></div>
             </div>
-
-            <nav class="nav main-menu">
-              <ul class="navigation" id="navbar">
-                <li><a href="#">
-                  <span>Home</span> 
-                </a></li>
-                <li><a href="#">
-                  <span>About Us</span>
-                </a></li>
-              </ul>
-            </nav>
-            <!-- Main Menu End-->
           </div>
 
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="btn-box">
-              <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a>
-              <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a>
+              <a href="login.html" class="theme-btn btn-style-three">Login / Register</a>
+              <a href="dashboard-post-job.html" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a>
             </div>
           </div>
         </div>
@@ -88,132 +73,130 @@
     <!--End Main Header -->
 
     <!-- Info Section -->
-    <div class="login-section col-lg-6 col-md-12 col-sm-12 form-columns">
-      <!-- <div class="image-layer" style="background-image: url(images/background/12.jpg);"></div> -->
+    <div class="login-section">
+      <div class="image-layer" style="background-image: url(images/register-bg.jpg);"></div>
       <div class="outer-box">
-        <!-- Login Form -->
-        <div class="login-form default-form ">
-          <div class="form-inner">
-            <h3>Create an Account In Is Yours</h3>
-
-            <!--Login Form-->
-            <form method="post" action="add-parcel.html">
-              <div class="form-group">
+         <!-- Login Form -->
+         <div class="login-form default-form ">
+            <div class="form-inner">
+              <h3>Create an Account In Is Yours</h3>
+  
+              <!--Login Form-->
+              <form method="post" action="add-parcel.html">
+                <div class="form-group">
+                  <div class="btn-box row">
+                    <div class="col-lg-6 col-md-12">
+                      <a href="#" class="theme-btn btn-style-seven" name="user_type"><i class="la la-user"></i> Candidate </a>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <a href="#" class="theme-btn btn-style-four" name="user_type"><i class="la la-briefcase"></i> Employer </a>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="form-group">
+                  <label for="firstName">First Name:</label>
+                  <input type="text" id="firstName" name="first_name" required><br>
+                </div>
+  
+                <div class="form-group">
+                  <label for="lastName">Last Name:</label>
+                  <input type="text" id="lastName" name="last_name" required><br>
+                </div>
+  
+                <div class="form-group">
+                  <label for="country">Country:</label>
+                    <select id="country" name="country_id" required>
+                      <option value="">--Select Country--</option>
+                      <option value="USA">United States</option>
+                      <option value="PR">Puerto Rico</option>
+                    </select><br>
+                </div>
+  
+                <div class="form-group">
+                  <label for="state">State:</label>
+                  <select id="state" name="state_id" required>
+                    <option value="">--Select State--</option>
+                    <option value="AZ">complete list from DB</option>
+                  </select><br>
+                </div>
+  
+                <div class="form-group">
+                  <label for="city">City:</label>
+                  <select id="city" name="city_id" required>
+                    <option value="">--Select City--</option>
+                    <option value="AZ">complete list from DB</option>
+                  </select><br>
+                </div>
+                
+                <div class="form-group">
+                  <label for="zipcode">ZIP Code:</label>
+                  <input type="text" pattern="\d{5}" title="Please enter a valid ZIP Code"id="zipcode" name="zipcode_id" required><br>
+                </div>
+  
+                <div class="form-group">
+                  <label for="phone">Phone Number:</label>
+                  <input type="text" id="phone" name="phone_number" required><br>
+                </div>
+  
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                   <input type="email" id="email" name="email" required><br>
+                </div>
+  
+  
+                <div class="form-group">
+                  <label>Password</label>
+                  <input id="password-field" type="password" name="password" value="" placeholder="Password">
+                </div>
+  
+                <div class="form-group">
+                  <label for="confirmPassword">Confirm Password:</label>
+                  <input type="password" id="confirmPassword" name="password_confirmation" required><br>
+                </div>
+  
+                <div class="form-group">
+                  <input type="checkbox" id="agree" name="is_agree_terms_privacy" required>
+                  <label for="agree">I agree to the user terms and privacy policy.</label><br>
+  
+                </div>
+  
+                <div class="form-group">
+                  <button class="theme-btn btn-style-one " type="submit" name="Register">Register</button>
+                </div>
+              </form>
+  
+              <!-- div class="bottom-box">
+                <div class="divider"><span>or</span></div>
                 <div class="btn-box row">
                   <div class="col-lg-6 col-md-12">
-                    <a href="#" class="theme-btn btn-style-seven" name="user_type"><i class="la la-user"></i> Candidate </a>
+                    <a href="#" class="theme-btn social-btn-two facebook-btn"><i class="fab fa-facebook-f"></i> Log In via Facebook</a>
                   </div>
                   <div class="col-lg-6 col-md-12">
-                    <a href="#" class="theme-btn btn-style-four" name="user_type"><i class="la la-briefcase"></i> Employer </a>
+                    <a href="#" class="theme-btn social-btn-two google-btn"><i class="fab fa-google"></i> Log In via Gmail</a>
                   </div>
                 </div>
-              </div>
-
-              <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="first_name" required><br>
-              </div>
-
-              <div class="form-group">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="last_name" required><br>
-              </div>
-
-              <div class="form-group">
-                <label for="country">Country:</label>
-                  <select id="country" name="country_id" required>
-                    <option value="">--Select Country--</option>
-                    <option value="USA">United States</option>
-                    <option value="PR">Puerto Rico</option>
-                  </select><br>
-              </div>
-
-              <div class="form-group">
-                <label for="state">State:</label>
-                <select id="state" name="state_id" required>
-                  <option value="">--Select State--</option>
-                  <option value="AZ">complete list from DB</option>
-                </select><br>
-              </div>
-
-              <div class="form-group">
-                <label for="city">City:</label>
-                <select id="city" name="city_id" required>
-                  <option value="">--Select City--</option>
-                  <option value="AZ">complete list from DB</option>
-                </select><br>
-              </div>
-              
-              <div class="form-group">
-                <label for="zipcode">ZIP Code:</label>
-                <input type="text" pattern="\d{5}" title="Please enter a valid ZIP Code"id="zipcode" name="zipcode_id" required><br>
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone_number" required><br>
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email:</label>
-                 <input type="email" id="email" name="email" required><br>
-              </div>
-
-
-              <div class="form-group">
-                <label>Password</label>
-                <input id="password-field" type="password" name="password" value="" placeholder="Password">
-              </div>
-
-              <div class="form-group">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="password_confirmation" required><br>
-              </div>
-
-              <div class="form-group">
-                <input type="checkbox" id="agree" name="is_agree_terms_privacy" required>
-                <label for="agree">I agree to the user terms and privacy policy.</label><br>
-
-              </div>
-
-              <div class="form-group">
-                <button class="theme-btn btn-style-one " type="submit" name="Register">Register</button>
-              </div>
-            </form>
-
-            <!-- div class="bottom-box">
-              <div class="divider"><span>or</span></div>
-              <div class="btn-box row">
-                <div class="col-lg-6 col-md-12">
-                  <a href="#" class="theme-btn social-btn-two facebook-btn"><i class="fab fa-facebook-f"></i> Log In via Facebook</a>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                  <a href="#" class="theme-btn social-btn-two google-btn"><i class="fab fa-google"></i> Log In via Gmail</a>
-                </div>
-              </div>
-            </div> -->
+              </div> -->
+            </div>
           </div>
-        </div>
-        <!--End Login Form -->
+          <!--End Login Form -->
       </div>
-    </div>
-    
-
-            <!-- div class="bottom-box">
-              <div class="divider"><span>or</span></div>
-              <div class="btn-box row">
-                <div class="col-lg-6 col-md-12">
-                  <a href="#" class="theme-btn social-btn-two facebook-btn"><i class="fab fa-facebook-f"></i> Log In via Facebook</a>
+      
+  
+              <!-- div class="bottom-box">
+                <div class="divider"><span>or</span></div>
+                <div class="btn-box row">
+                  <div class="col-lg-6 col-md-12">
+                    <a href="#" class="theme-btn social-btn-two facebook-btn"><i class="fab fa-facebook-f"></i> Log In via Facebook</a>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <a href="#" class="theme-btn social-btn-two google-btn"><i class="fab fa-google"></i> Log In via Gmail</a>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
-                  <a href="#" class="theme-btn social-btn-two google-btn"><i class="fab fa-google"></i> Log In via Gmail</a>
-                </div>
-              </div>
-            </div> -->
+              </div> -->
+            </div>
           </div>
-        </div>
-        <!--End Login Form -->
-      </div>
+          <!--End Login Form -->      </div>
     </div>
     <!-- End Info Section -->
 
@@ -222,6 +205,7 @@
 
 
   <script src="js/jquery.js"></script>
+  <script src="js/logo.change.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/chosen.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
