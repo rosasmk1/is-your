@@ -5,7 +5,7 @@
 
 
 
-    var endpoint = "https://18.207.195.131/api/";
+    var endpoint = "https://api.isyours.us/api/";
     //var endpoint = "http://www.isyours.com/api/";
 	
 	$(window).on('load', function() {
