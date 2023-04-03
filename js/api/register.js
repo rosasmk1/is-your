@@ -3,8 +3,6 @@
 	"use strict";
     // Define the endpoint for the API
 
-
-
     var endpoint = "https://api.isyours.us/api/";
     //var endpoint = "http://www.isyours.com/api/";
 	
