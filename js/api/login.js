@@ -39,8 +39,8 @@
                 // Handle successful response
                 sessionStorage.setItem("token", response.access_token);
                 sessionStorage.setItem("token_type", response.token_type);
-                sessionStorage.setItem("email", response.email);
-                window.location.replace("job-list-v1.html")
+                sessionStorage.setItem("email", response.user.email);
+                window.location.replace("job-single--NEW.html")
             },
             error: function(error) {
                 if (error.status === 401) {
