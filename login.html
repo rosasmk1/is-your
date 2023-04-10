@@ -57,7 +57,7 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="btn-box">
-              <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a>
+              <!-- <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a> -->
               <a href="#" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a>
             </div>
           </div>
@@ -74,7 +74,7 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="login-box">
-              <a href="login-popup.html" class="call-modal"><span class="icon-user"></span></a>
+              <a href="login.html" class=""><span class="icon-user"></span></a>
             </div>
 
             <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"><span class="flaticon-menu-1"></span></a>
@@ -96,10 +96,12 @@
           <div class="form-inner">
             <h3>Login to Is Yours</h3>
             <!--Login Form-->
-            <form method="post" action="add-parcel.html">
+            <form id="loginForm" method="post" action="">
+              <div id="errors"></div>
+
               <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" placeholder="Username" required>
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Email" required>
               </div>
 
               <div class="form-group">
@@ -160,6 +162,7 @@
   <script src="js/owl.js"></script>
   <script src="js/wow.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/api/login.js"></script>
 </body>
 
 </html>
