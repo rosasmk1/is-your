@@ -90,7 +90,9 @@
                 data: JSON.stringify(formData),
                 success: function(response) {
                     // Handle successful response
-                    alert(response.message);
+                   // alert(response.message);
+                    window.location.replace("login.html")
+
                 },
                 error: function(error) {
                     if (error.status === 422) {
